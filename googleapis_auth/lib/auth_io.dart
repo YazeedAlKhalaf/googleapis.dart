@@ -257,3 +257,16 @@ Future<AccessCredentials> obtainAccessCredentialsViaUserConsentManual(
       userPrompt,
       hostedDomain: hostedDomain,
     ).run();
+
+/// this is a fake for [createImplicitBrowserFlow] in the browser part.
+Future<dynamic> createImplicitBrowserFlow(
+  ClientId clientId,
+  List<String> scopes, {
+  Client? baseClient,
+  @Deprecated(
+    'Undocumented feature. May help debugging. '
+    'Do not include in production code.',
+  )
+      bool enableDebugLogs = false,
+}) async =>
+    '';

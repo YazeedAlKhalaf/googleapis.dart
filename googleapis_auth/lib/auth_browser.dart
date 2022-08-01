@@ -309,3 +309,13 @@ String? _promptFromBooleans(bool force, bool immediate) {
   }
   return null;
 }
+
+/// this is a fake for [obtainAccessCredentialsViaUserConsent] in the io part.
+Future<dynamic> obtainAccessCredentialsViaUserConsent(
+  ClientId clientId,
+  List<String> scopes,
+  Client client,
+  void Function(String) userPrompt, {
+  String? hostedDomain,
+}) async =>
+    '';
